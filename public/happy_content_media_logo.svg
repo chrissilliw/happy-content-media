@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="393.5" height="205" viewBox="0 0 393.5 205">
+  <g id="Logo_text" transform="translate(951.5 -1529)">
+    <text id="Happy_Content_Media_Stockholm" data-name="Happy 
+Content 
+Media 
+Stockholm" transform="translate(-725 1589)" font-size="38" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Happy </tspan><tspan x="0" y="47">Content </tspan><tspan x="0" y="94">Media </tspan><tspan font-size="15" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="119">Stockholm</tspan></tspan></text>
+    <g id="Group_10" data-name="Group 10" transform="translate(-1227.5 1045)">
+      <g id="Logo">
+        <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(276 484)" fill="none" stroke="#000" stroke-width="5">
+          <circle cx="102.5" cy="102.5" r="102.5" stroke="none"/>
+          <circle cx="102.5" cy="102.5" r="100" fill="none"/>
+        </g>
+        <g id="Group_2" data-name="Group 2" transform="translate(1.652 4)">
+          <text id="M" transform="translate(389.348 572)" font-size="50" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">M</tspan></text>
+          <text id="H" transform="translate(318.348 572)" font-size="50" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">H</tspan></text>
+        </g>
+        <path id="Smile" d="M-182.749,1425.5h0c40.742,0,66.408,34.057,65.5,67.816-.866,32.054-22.594,63.972-65.5,65.766" transform="translate(1870.791 774.249) rotate(90)" fill="none" stroke="#000" stroke-width="5"/>
+      </g>
+    </g>
+  </g>
+</svg>
