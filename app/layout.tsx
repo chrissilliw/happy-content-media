@@ -1,10 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Lora } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
 import MenuNavbar from "./components/MenuNavbar";
+import MarginWrapperComponent from "./components/MarginWrapperComponent";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["100", "200", "300"],
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  variable: "--font-lora",
+  weight: ["400", "500"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,11 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {/* <Navbar /> */}
-        {/* <MenuNavbar /> */}
-        <MenuNavbar />
-        {children}
+      <body className={`${lora.variable} ${inter.variable}`}>
+        <MarginWrapperComponent>
+          <MenuNavbar />
+        </MarginWrapperComponent>
+        <main className="">{children}</main>
       </body>
     </html>
   );

@@ -26,12 +26,12 @@ const MenuNavbar = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   const navItems = [
-    { name: "Foto", link: "foto" },
-    { name: "Video", link: "video" },
-    { name: "Vår story", link: "var-story" },
+    { name: "Foto", link: "/foto" },
+    { name: "Video", link: "/video" },
+    { name: "Vår story", link: "/var-story" },
   ];
   return isDesktop ? (
-    <div className="flex justify-between mx-10 my-5">
+    <div className="flex justify-between my-5">
       <div className="w-[40px]">
         <AspectRatio ratio={1 / 1}>
           <Image src={happyContentMedia} alt="logo" width={40} height={40} />
@@ -49,13 +49,13 @@ const MenuNavbar = () => {
             </NavigationMenuItem>
           ))}
         </NavigationMenuList>
-        <a
+        <Link
           href="/kontakt"
           role="button"
           className="px-4 py-2 bg-slate-800 max-w-fit text-white rounded-md"
         >
           Kontakt
-        </a>
+        </Link>
       </NavigationMenu>
       {/* </div> */}
     </div>
@@ -78,13 +78,13 @@ const MenuNavbar = () => {
               </SheetClose>
             ))}
             <SheetClose asChild>
-              <a
+              <Link
                 href="/kontakt"
                 role="button"
                 className="px-4 py-2 bg-slate-800 max-w-fit text-white rounded-md"
               >
                 Kontakt
-              </a>
+              </Link>
             </SheetClose>
           </div>
         </SheetContent>
