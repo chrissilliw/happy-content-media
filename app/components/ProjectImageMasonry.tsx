@@ -2,7 +2,7 @@ import React from "react";
 import image1 from "@/public/images/world_of_milton/world_of_milton1.jpg";
 import image2 from "@/public/images/world_of_milton/world_of_milton2.jpg";
 import image3 from "@/public/images/world_of_milton/image3.jpg";
-import image4 from "@/public/images/world_of_milton/world_of_milton4.jpg";
+import image4 from "@/public/images/world_of_milton/image2.jpg";
 import Image from "next/image";
 
 const ProjectImageMasonry = () => {

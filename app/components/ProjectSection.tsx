@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import greenBottle from "@/public/images/green_bottle.jpg";
 import ButtonWithArrow from "./ButtonWithArrow";
 import ProjectImageMasonry from "./ProjectImageMasonry";
 

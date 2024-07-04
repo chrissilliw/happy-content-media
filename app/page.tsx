@@ -1,5 +1,6 @@
 import FullwidthBanner from "./components/FullwidthBanner";
 import MarginWrapperComponent from "./components/MarginWrapperComponent";
+import MenuNavbar from "./components/MenuNavbar";
 import Navbar from "./components/Navbar";
 import ProjectSection from "./components/ProjectSection";
 import ServiceSection from "./components/ServiceSection";

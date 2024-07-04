@@ -1,6 +1,4 @@
 "use client";
-
-import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -38,13 +36,14 @@ const MenuNavbar = () => {
         </AspectRatio>
       </div>
       <NavigationMenu>
-        <NavigationMenuList>
+        <NavigationMenuList className="gap-4 mr-4">
           {navItems.map((item) => (
             <NavigationMenuItem key={item.name}>
-              <Link href={item.link}>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <Link href={item.link} className="">
+                {/* <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   {item.name}
-                </NavigationMenuLink>
+                </NavigationMenuLink> */}
+                {item.name}
               </Link>
             </NavigationMenuItem>
           ))}

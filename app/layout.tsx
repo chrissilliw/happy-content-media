@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Lora } from "next/font/google";
 import "./globals.css";
-import MenuNavbar from "./components/MenuNavbar";
 import MarginWrapperComponent from "./components/MarginWrapperComponent";
+import MenuNavbar from "./components/MenuNavbar";
+// import MenuNavbar from "./components/MenuNavbar";
+// import MarginWrapperComponent from "./components/MarginWrapperComponent";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,10 +31,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lora.variable} ${inter.variable}`}>
-        <MarginWrapperComponent>
-          <MenuNavbar />
-        </MarginWrapperComponent>
-        <main className="">{children}</main>
+        <main className="">
+          {" "}
+          <MarginWrapperComponent>
+            <MenuNavbar />
+          </MarginWrapperComponent>
+          {children}
+        </main>
       </body>
     </html>
   );
