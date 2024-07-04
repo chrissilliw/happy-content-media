@@ -1,5 +1,6 @@
 import MarginWrapperComponent from "@/app/components/MarginWrapperComponent";
 import ProjectDetailImageMasonry from "@/app/components/ProjectDetailImageMasonry";
+import ProjectVideo from "@/app/components/ProjectVideo";
 import React from "react";
 
 const ProjectDetailPage = () => {
@@ -31,6 +32,7 @@ const ProjectDetailPage = () => {
             </p>
           </div>
         </div>
+        <ProjectVideo />
         <ProjectDetailImageMasonry companyName="Lips of Sweden" />
 
         <div className="columns-1 sm:columns-2 gap-10">{}</div>
