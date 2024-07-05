@@ -30,11 +30,13 @@ const MenuNavbar = () => {
   ];
   return isDesktop ? (
     <div className="flex justify-between my-5">
-      <div className="w-[40px]">
-        <AspectRatio ratio={1 / 1}>
-          <Image src={happyContentMedia} alt="logo" width={40} height={40} />
-        </AspectRatio>
-      </div>
+      <Link href="/">
+        <div className="w-[40px]">
+          <AspectRatio ratio={1 / 1}>
+            <Image src={happyContentMedia} alt="logo" width={40} height={40} />
+          </AspectRatio>
+        </div>
+      </Link>
       <NavigationMenu>
         <NavigationMenuList className="gap-4 mr-4">
           {navItems.map((item) => (

@@ -1,7 +1,7 @@
 import MarginWrapperComponent from "@/app/components/MarginWrapperComponent";
 import ProjectDetailImageMasonry from "@/app/components/ProjectDetailImageMasonry";
 import ProjectVideo from "@/app/components/ProjectVideo";
-import React from "react";
+import React, { Suspense } from "react";
 
 const ProjectDetailPage = () => {
   return (
@@ -32,7 +32,9 @@ const ProjectDetailPage = () => {
             </p>
           </div>
         </div>
-        <ProjectVideo />
+        <Suspense fallback={<p>Loading video...</p>}>
+          <ProjectVideo fileName="https://7ujlttd78rnapwep.public.blob.vercel-storage.com/video/OneWing-bottle_v2-ilnHapvYaZbDWOqVPWDJXIlo3v9JKX.mp4" />
+        </Suspense>
         <ProjectDetailImageMasonry companyName="Lips of Sweden" />
 
         <div className="columns-1 sm:columns-2 gap-10">{}</div>
